@@ -1,0 +1,555 @@
+{
+	"logout": "logout",
+	"welcome": "welcome",
+	"common": {
+		"notApplicable": "N/A"
+	},
+	"menu": {
+		"SCREENING_MODULE": "Screening",
+		"PERSONAL_TASK_MODULE": "Personal Tasks",
+		"ANALYTICS_MODULE": "Analytics",
+		"ACCOUNT_MODULE": "Account",
+		"WELLS_MODULE": "Wells"
+	},
+
+	"myAccount": {
+		"title": "My Account",
+		"firstName": "Name",
+		"lastName": "Lastname",
+		"email": "Email",
+		"document": "Document",
+		"phone": "Telephone",
+		"address": "Address",
+		"role": "Role",
+		"language": "App language",
+		"roles": {
+			"manager": "Manager",
+			"supervisor": "Supervisor",
+			"operator": "Operator"
+		},
+		"languages": {
+			"es": "Spanish",
+			"en": "English"
+		},
+		"languageUpdated": "Language updated succesfully",
+		"languageUpdateError": "Error with language update"
+	},
+
+	"home": {
+		"pageTitle": "Home",
+		"secondaryTitle": "Entities List",
+		"table": {
+			"type": "Type",
+			"well": "Well",
+			"performance": "Performance",
+			"actionPlan": "Action Plan",
+			"project": "Proyect",
+			"destinationPlant": "Destination Plant",
+			"date": "Date",
+			"tasks": "Tasks",
+			"viewTasks": "View tasks"
+		},
+		"drawer": {
+			"title": "Pending Tasks",
+			"viewMore": "View more →"
+		},
+		"status": {
+			"Block": "Blocked",
+			"InProgress": "In progress",
+			"Done": "Completed"
+		},
+		"errors": {
+			"tasksFetch": "Failed to fetch tasks",
+			"entitiesFetch": "Failed to fetch articles"
+		}
+	},
+
+	"wellTypes": {
+		"Oil Producer": "Oil Producer",
+		"Water Producer": "Water Producer",
+		"Water Injector": "Water Injector",
+		"Disposal": "Disposal",
+		"Gas Producer": "Gas Producer",
+		"N/A": "N/A"
+	},
+
+	"methodProduction": {
+		"Progressive cavity pump (PCP)": "Progressive cavity pump (PCP)",
+		"Recoil": "Recoil",
+		"Natural Flow": "Natural Flow",
+		"N/A": "N/A",
+		"Swabbing": "Swabbing",
+		"Sucker rod pumping": "Sucker rod pumping",
+		"Unknown": "Unknown"
+	},
+
+	"reservoir_type": {
+		"N/A": "N/A",
+		"Conventional": "Conventional",
+		"Unknown": "Unknown"
+	},
+
+	"drillingType": {
+		"N/A": "N/A",
+		"Vertical": "Vertical",
+		"Unknown": "Unknown"
+	},
+
+	"actionPlans": {
+		"ADJUST_POTENTIAL": {
+			"name": "Adjust potential",
+			"description": "Actions focused on modifying well production targets based on current reservoir conditions and well capabilities to optimize production rates."
+		},
+		"IMPROVE_FLUID": {
+			"name": "Improve Fluid Allocation",
+			"description": "Optimization of fluid distribution systems to enhance production efficiency and manage flow rates across multiple wells."
+		},
+		"SOLVE_FACILITIES": {
+			"name": "Solve Facilities Constrains",
+			"description": "Addressing and resolving infrastructure limitations that restrict optimal production, including equipment upgrades or modifications."
+		},
+		"INACTIVE": {
+			"name": "Inactive Well/Shut in",
+			"description": "Management of temporarily suspended wells or planned shut-ins for maintenance, safety, or economic reasons."
+		},
+		"ADJUST_SURFACE": {
+			"name": "Adjust surface operational parameters",
+			"description": "Fine-tuning surface equipment settings and operational conditions to optimize production performance."
+		},
+		"UPDATE_PARAMETERS": {
+			"name": "Update operational parameters",
+			"description": "Revision and modification of key operational variables to align with current well conditions and production goals."
+		},
+		"NORMAL_MONITORING": {
+			"name": "Normal Monitoring",
+			"description": "Regular surveillance and data collection to maintain awareness of well performance and identify potential issues early."
+		},
+		"RETURN_PRODUCTION": {
+			"name": "Return to production/Injection",
+			"description": "Process of bringing offline wells back into active service following maintenance or shut-in periods."
+		},
+		"IMPROVE_RECOVERY": {
+			"name": "Improve Enhanced Recovery",
+			"description": "Implementation of advanced recovery techniques to increase production from existing wells through enhanced oil recovery methods."
+		},
+		"REDUCE_CAPACITY": {
+			"name": "Reduce lack of capacity",
+			"description": "Actions to address and minimize production constraints caused by capacity limitations in surface facilities or downstream systems."
+		},
+		"IMPROVE_RESERVOIR": {
+			"name": "Improve reservoir performance",
+			"description": "Strategies to enhance reservoir productivity through various engineering and geological interventions."
+		},
+		"ADJUST_FLOW": {
+			"name": "Adjust Inflow/Outflow performance",
+			"description": "Optimization of well inflow and outflow conditions to maximize production efficiency and well performance."
+		},
+		"possible_potential_adjustment": {
+			"name": "Possible potential Adjustment"
+		},
+		"further_studies": {
+			"name": "Further Studies"
+		},
+		"water_flooding_issues": {
+			"name": "Water flooding Issues"
+		},
+		"no_performance": {
+			"name": "No performance"
+		},
+		"operative_restrictions": {
+			"name": "Operative Restrictions"
+		},
+		"non_recoverable_production": {
+			"name": "Non recoverable Production"
+		},
+		"FURTHER_STUDIES": {
+			"name": "Further Studies",
+			"description": "Additional technical analysis and investigation required to determine optimal course of action for well improvement."
+		},
+		"OUT_OF_SCAN": {
+			"name": "Out of Scan",
+			"description": "Wells that fall outside regular monitoring parameters or require special attention due to unique circumstances."
+		},
+		"null": {
+			"name": "Not assigned"
+		}
+	},
+
+	"performance": {
+		"UNRECOVRABLE": {
+			"name": "Unrecoverable",
+			"description": "Well performing significantly below expectations with limited to no economic recovery potential. May be candidate for abandonment or repurposing."
+		},
+		"OUTSTANDING": {
+			"name": "Outstanding",
+			"description": "Well performing above expected production levels with optimal operational efficiency and minimal intervention requirements. Represents best-in-class production performance."
+		},
+		"AVERAGE": {
+			"name": "Average",
+			"description": "Well maintaining expected production levels within normal operational parameters. Requires standard maintenance and monitoring."
+		},
+		"RECOVERABLE": {
+			"name": "Recoverable",
+			"description": "Well showing decreased performance but has potential for production recovery through targeted interventions and optimization techniques."
+		},
+		"ENHANCE": {
+			"name": "Enhance",
+			"description": "Well requiring significant intervention to improve production. Candidate for enhancement techniques like stimulation or artificial lift optimization."
+		},
+		"improve": {
+			"name": "≜ Improve"
+		},
+		"normal": {
+			"name": "⁓ Normal"
+		},
+		"poor": {
+			"name": "‼ Issue"
+		},
+		"null": {
+			"name": "Not assigned"
+		}
+	},
+
+	"filters": {
+		"addFilter": "Add filter",
+		"generalFilters": "General filters",
+		"wellType": "Well Type",
+		"destinationPlant": "Destination Plant",
+		"project": "Project",
+		"searchWellCode": "Search Well Code",
+		"actionPlan": "Action Plan",
+		"performance": "Performance",
+		"removeFilter": "Remove Filter"
+	},
+
+	"tasks": {
+		"common": {
+			"confirm": "Confirm",
+			"cancel": "Cancel",
+			"save": "Save"
+		},
+		"tabs": {
+			"generalData": "General Data",
+			"tasks": "Tasks",
+			"reservoirAnalysis": "Complementary Analysis"
+		},
+		"messages": {
+			"updateSuccess": "Well status update successfully",
+			"updateError": "Failed to update well status",
+			"createSuccess": "Task created successfully",
+			"createError": "Failed to create task",
+			"loadError": "Failed to load tasks"
+		},
+		"pageActions": {
+			"changePerformance": "Change Performance",
+			"loadFailed": "Failed to load options"
+		},
+		"wellDetail": {
+			"statistics": {
+				"type": "Type",
+				"destinationBatch": "Destination Batch",
+				"methodOfProduction": "Method of Production",
+				"drillingType": "Drilling Type",
+				"reservoirType": "Reservoir Type",
+				"depth": "Depth (m)",
+				"destinationPlant": "Destination Plant",
+				"destinationSite": "Destination Site",
+				"wfProject": "WF Project",
+				"wellType": "Well Type"
+			},
+			"tasks": {
+				"open": "OPEN TASKS",
+				"closed": "CLOSED TASKS"
+			}
+		},
+		"addTask": "+ Add Task",
+		"statuses": {
+			"pending": "Pending",
+			"failed": "Failed",
+			"in_progress": "In Progress",
+			"to_do": "To Do",
+			"stand_by": "Stand By",
+			"canceled": "Canceled",
+			"done": "Done"
+		},
+		"addTaskModal": {
+			"title": "Add New Task",
+			"cancel": "Cancel",
+			"add": "Add Task",
+			"task": "Task",
+			"selectTask": "Please select a task",
+			"responsible": "Responsible",
+			"selectResponsible": "Please select the responsible person",
+			"priority": "Priority",
+			"selectPriority": "Please select the priority",
+			"startDate": "Start Date",
+			"selectStartDate": "Please select the start date",
+			"dueDate": "Due Date",
+			"selectDueDate": "Please select the due date!",
+			"comments": "Additional Comments",
+			"maxCharacters": "Maximum 500 characters",
+			"priorityOptions": {
+				"ALTA": "High",
+				"MEDIA": "Medium",
+				"BAJA": "Low"
+			}
+		},
+		"taskDetails": {
+			"taskRequired": "Task is required",
+			"updatedTask": "Task updated successfully",
+			"updateFailed": "Failed to update task",
+			"updatingTask": "Updating task...",
+			"selectTask": "Select a task to view details",
+			"notifyTo": "Notifify to",
+			"status": "Status",
+			"comments": "Comments",
+			"subTasks": "SubTasks",
+			"documents": "Documents",
+			"addComment": "+ Add Comment",
+			"inputComment": "Input comment",
+			"sendComment": "Send comment",
+			"addSubTask": "+ Add SubTask",
+			"inputSubTask": "Input SubTask",
+			"sendSubTask": "Send SubTask",
+			"addDocument": "+ Add Document",
+			"document": "Document",
+			"save": "Save",
+			"selectFile": "Select File",
+			"fileSelected": "File Selected",
+			"documentUploaded": "Document uploaded",
+			"documentDeleted": "Document deleted",
+			"confirmDeleteTitle": "¿Delete document?",
+			"confirmDeleteText": "¿Do you want to delete this document permanently?"
+		},
+		"reservoir": {
+			"title": "Complementary Analysis",
+			"submitError": "Error saving analysis",
+			"addAnalysis": "Add Analysis",
+			"analysisType": "Type of Analysis",
+			"analysisTypes": {
+				"action_plan_proposal": "Future Action Plan Proposal",
+				"evaluation_doc": "Special Reports",
+				"comment": "Well Comment",
+				"default": "Analysis"
+			},
+			"form": {
+				"specialReports": {
+					"date": "Date",
+					"description": "Description",
+					"type": "Report type",
+					"typeRequired": "Please select a report type",
+					"dateRequired": "Please select a date",
+					"descriptionRequired": "Please enter a description",
+					"fileRequired": "Please select a file",
+					"types": {
+						"fluidAnalysis": "Fluid analysis report",
+						"materialAnalysis": "Material analysis report",
+						"solidSamplesAnalysis": "Solid samples analysis report",
+						"otherReports": "Other reports (add detail)"
+					}
+				},
+				"specialReportsHelp": {
+					"title": "Types of special reports:",
+					"fluidAnalysis": "• Fluid analysis report",
+					"materialAnalysis": "• Material analysis report",
+					"solidSamplesAnalysis": "• Solid samples analysis report",
+					"otherReports": "• Other reports (add detail)",
+					"note": "Note: Special reports are the attachments. Add date and description to summarize the report content (example: fishing photos rod break 1\" no 57)"
+				},
+				"selectTask": "Select Task",
+				"selectActionPlan": "Select Action Plan",
+				"observations": "Observations",
+				"comment": "Enter well comment",
+				"uploadFile": "Select special report",
+				"linkedTo": "Linked to",
+				"estimatedYear": "Estimated Year",
+				"reportType": "Report Type",
+				"date": "Date",
+				"description": "Description"
+			},
+			"details": {
+				"selectToView": "Select to view details",
+				"actionPlanProposal": "Future Action Plan Proposal",
+				"evaluationDoc": "Special Reports",
+				"comment": "Well Comment",
+				"attachedDoc": "Attached Document",
+				"date": "Date",
+				"createdBy": "Created by"
+			},
+			"confirmDeleteTitle": "Delete document?",
+			"confirmDeleteText": "This action will delete the document from the system. Do you want to continue?",
+			"documentDeleted": "Document deleted",
+			"errorDeleting": "Error when deleting",
+			"loadError": "Error loading analyses",
+			"commentAdded": "Comment added successfully",
+			"commentError": "Error adding comment",
+			"commentEmpty": "Comment cannot be empty",
+			"commentUpdated": "Comment updated successfully",
+			"errorUpdatingComment": "Error updating comment",
+			"commentDeleted": "Comment deleted successfully",
+			"errorDeletingComment": "Error deleting comment",
+			"confirmDeleteCommentText": "This action will delete the comment permanently. Do you want to continue?",
+			"futureActionPlanAdded": "Future action plan added successfully",
+			"futureActionPlanError": "Error adding future action plan",
+			"futureActionPlanUpdated": "Future action plan updated successfully",
+			"errorUpdatingFutureActionPlan": "Error updating future action plan",
+			"futureActionPlanDeleted": "Future action plan deleted successfully",
+			"errorDeletingFutureActionPlan": "Error deleting future action plan",
+			"confirmDeleteFutureActionPlanText": "This action will delete the future action plan permanently. Do you want to continue?",
+			"yearRequired": "Year is required"
+		}
+	},
+
+	"definedTasks": {
+		"1": "Calculate IPR",
+		"2": "Update Well Potential/Target",
+		"3": "Define extractive conditions",
+		"4": "Analyze fluid sample",
+		"5": "Perform well testing",
+		"6": "Calibrate surface equipment",
+		"7": "Audit measuring system",
+		"8": "Review allocation network",
+		"9": "Modify/Update allocation network",
+		"10": "Verify wellhead/line pressure",
+		"11": "Define Injection Condition",
+		"12": "Define well intervention program",
+		"13": "Run economics",
+		"14": "Schedule Well Intervention",
+		"15": "AFE Request",
+		"16": "Define intervention cost",
+		"17": "Hook up well",
+		"18": "Reserves Estimation",
+		"19": "Cost & Risk Estimation",
+		"20": "Run Flow Log",
+		"21": "Assembly Calibration/Clean up",
+		"22": "Replace/Clean filters",
+		"23": "Perform Acid Cleanup - Commigled",
+		"24": "Perform Acid Cleanup - Selective",
+		"25": "Wellbore Cleanout",
+		"26": "Adjust Outflow Performance - Surface",
+		"27": "Adjust Outflow Performance - Downhole",
+		"28": "Set Downhole Regulation Plug",
+		"29": "Open New Zone",
+		"30": "Seal Off or Isolate Existent Zone",
+		"31": "Improve Water Quality",
+		"32": "Improve Water Handling",
+		"33": "Reservoir Study",
+		"34": "Injection History Review",
+		"35": "Analyze solid sample",
+		"36": "Analyze material condition",
+		"37": "Perform environmental studies",
+		"38": "Temporaly shut in",
+		"39": "Increase water injection capacity",
+		"40": "Increase pumping capacity",
+		"41": "Regulate production rates",
+		"42": "Regulate injection rates",
+		"43": "Perform Acidizing Job",
+		"44": "Perform Hydraulic fracturing",
+		"45": "Include/Exclude Waterflooding pattern",
+		"46": "Include/Exclude Gas injection",
+		"47": "Chemical injection",
+		"48": "Extended reach drilling/Multirateral well",
+		"49": "Reperforate",
+		"50": "Dewatering",
+		"51": "Downsize downhole Pump",
+		"52": "Change Artificial lift system",
+		"53": "Redesing BHA/Pump",
+		"54": "Upsize Downhole Pump",
+		"55": "Design New Selective Injection Assembly",
+		"56": "Reservoir Pressure Test",
+		"57": "History matching",
+		"58": "Simulate well",
+		"59": "Review Well Performance",
+		"60": "Review Action plan",
+		"61": "Review facilities layout",
+		"62": "Perform MOC",
+		"63": "Define project scope",
+		"64": "Carry out project",
+		"65": "Improve/Repair Injection Facility",
+		"66": "Pipeline Clean Up",
+		"67": "Pipeline replacement",
+		"68": "Upgrade capacity",
+		"69": "Analyze risks and hazards",
+		"70": "Define intervention program",
+		"71": "Perform shut in operation",
+		"72": "Evaluate economic/technical feasibility",
+		"73": "Change well status",
+		"74": "Present Shut in Report",
+		"75": "Reduce frequency/speed of operation",
+		"76": "Increase frequency/speed of operation",
+		"77": "Modify surface pressure",
+		"78": "Modify surface choke",
+		"79": "Review Chemical treatment",
+		"80": "Modify Chemical treatment plan",
+		"81": "Replace surface equipment",
+		"82": "Increase surface equipment extractive capacity",
+		"83": "Reduce surface equipment extractive capacity",
+		"84": "Set up corrective mainentenance",
+		"85": "Set up preventive maintenance",
+		"86": "Modify set points",
+		"87": "Adjust Alarm settings",
+		"88": "Verify/Calibrate Sensors",
+		"89": "Replace Sensors",
+		"90": "Modify SCADA set up",
+		"91": "Improve/correct communications",
+		"92": "Validate IPR"
+	},
+
+	"personalTasks": {
+		"pageName": "My Tasks",
+		"secondaryTitle": "Personal tasks list",
+		"drawerTitle": "Task details",
+		"columns": {
+			"wellType": "Well Type",
+			"performance": "Performance",
+			"actionPlan": "Action Plan",
+			"well": "Well",
+			"task": "Task",
+			"priority": "Priority",
+			"status": "Status",
+			"project": "Project",
+			"destinationPlant": "Destination Plant",
+			"startDate": "Start Date",
+			"dueDate": "Due Date"
+		},
+		"statuses": {
+			"pending": "Pending",
+			"in_progress": "In Progress",
+			"done": "Done",
+			"canceled": "Canceled",
+			"failed": "Failed",
+			"stand_by": "Stand By",
+			"to_do": "To Do"
+		},
+		"wellTypes": {
+			"Oil Producer": "Oil Producer",
+			"Water Producer": "Water Producer",
+			"Water Injector": "Water Injector",
+			"Disposal": "Disposal"
+		}
+	},
+
+	"analytics": {
+		"title": "Analytics",
+		"subtitle": "Power Bi embedded"
+	},
+
+	"wellsPage": {
+		"pageName": "Wells Management",
+		"secondaryTitle": "Wells data management",
+		"drawerTitle": "Well detail",
+		"columns": {
+			"wellType": "Well Type",
+			"performance": "Performance",
+			"actionPlan": "Action Plan",
+			"well": "Well",
+			"task": "Task",
+			"priority": "Priority",
+			"status": "Status",
+			"project": "Project",
+			"destinationPlant": "Destination Plant",
+			"startDate": "Start Date",
+			"dueDate": "Due Date"
+		}
+	}
+}

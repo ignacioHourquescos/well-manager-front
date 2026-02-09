@@ -1,0 +1,189 @@
+[
+	{
+		"id": 4,
+		"task": "Mantenimiento de Filtros de Superficie",
+		"dateStart": "18/04/2023",
+		"dateFinish": "18/07/2023",
+		"status": "Block",
+		"notify": "Isabel Martínez",
+		"priority": "high",
+		"notes": "Reemplazar filtros en pozos 3, 7 y 12. Verificar integridad de sellos y conexiones.",
+		"responsable": "Alejandro Rodríguez"
+	},
+	{
+		"id": 5,
+		"task": "Mejorar/Reparar Instalaciones de Inyección",
+		"dateStart": "09/02/2023",
+		"dateFinish": "09/08/2023",
+		"status": "In Progress",
+		"notify": "Javier García",
+		"priority": "mid",
+		"notes": "Enfoque en líneas de alta presión. Reemplazar válvulas defectuosas en estación principal.",
+		"responsable": "Carmen Fernández"
+	},
+	{
+		"id": 6,
+		"task": "Estimación de Costos y Riesgo",
+		"dateStart": "01/12/2022",
+		"dateFinish": "01/03/2023",
+		"status": "Done",
+		"notify": "María Sánchez",
+		"priority": "high",
+		"notes": "Incluir análisis de sensibilidad y proyecciones a 5 años. Revisar con finanzas.",
+		"responsable": "Miguel Ángel López"
+	},
+	{
+		"id": 7,
+		"task": "Revisión de Historia de Inyección",
+		"dateStart": "14/09/2022",
+		"dateFinish": "14/01/2023",
+		"status": "To Do",
+		"notify": "Antonio Pérez",
+		"priority": "low",
+		"notes": null,
+		"responsable": "Isabel Martínez"
+	},
+	{
+		"id": 8,
+		"task": "Regulación de Superficie",
+		"dateStart": "30/06/2022",
+		"dateFinish": "30/11/2022",
+		"status": "Done",
+		"notify": "Laura Gómez",
+		"priority": "mid",
+		"notes": "Ajustar válvulas en manifold principal. Calibrar medidores de flujo en todas las líneas.",
+		"responsable": "Javier García"
+	},
+	{
+		"id": 9,
+		"task": "Prueba de Presión de Reservorio",
+		"dateStart": "05/04/2022",
+		"dateFinish": "05/07/2022",
+		"status": "Block",
+		"notify": "Carlos Jiménez",
+		"priority": "high",
+		"notes": "Usar nuevos sensores de presión. Coordinar con equipo de perforación para acceso.",
+		"responsable": "María Sánchez"
+	},
+	{
+		"id": 10,
+		"task": "Calibración de Instalación",
+		"dateStart": "20/01/2022",
+		"dateFinish": "20/05/2022",
+		"status": "Done",
+		"notify": "Ana Ruiz",
+		"priority": "low",
+		"notes": null,
+		"responsable": "Antonio Pérez"
+	},
+	{
+		"id": 11,
+		"task": "Análisis de Producción de Agua",
+		"dateStart": "01/06/2023",
+		"dateFinish": "01/09/2023",
+		"status": "In Progress",
+		"notify": "Elena Morales",
+		"priority": "high",
+		"notes": "Evaluar tendencias de corte de agua en pozos críticos. Proponer soluciones de control.",
+		"responsable": "Laura Gómez"
+	},
+	{
+		"id": 12,
+		"task": "Optimización de Bombeo Electrosumergible",
+		"dateStart": "15/07/2023",
+		"dateFinish": "15/10/2023",
+		"status": "To Do",
+		"notify": "Roberto Vargas",
+		"priority": "mid",
+		"notes": "Ajustar parámetros operativos en pozos 5, 8 y 11. Monitorear eficiencia energética.",
+		"responsable": "Carlos Jiménez"
+	},
+	{
+		"id": 13,
+		"task": "Evaluación de Integridad de Tubería",
+		"dateStart": "01/08/2023",
+		"dateFinish": "01/11/2023",
+		"status": "To Do",
+		"notify": "Sofía Mendoza",
+		"priority": "high",
+		"notes": "Realizar inspección con herramientas inteligentes. Priorizar secciones críticas.",
+		"responsable": "Ana Ruiz"
+	},
+	{
+		"id": 14,
+		"task": "Monitoreo de Corrosión",
+		"dateStart": "10/09/2023",
+		"dateFinish": "10/03/2024",
+		"status": "To Do",
+		"notify": "Diego Castro",
+		"priority": "mid",
+		"notes": "Instalar cupones de corrosión en puntos clave. Analizar tendencias mensuales.",
+		"responsable": "Elena Morales"
+	},
+	{
+		"id": 15,
+		"task": "Actualización de Modelo Geológico",
+		"dateStart": "01/10/2023",
+		"dateFinish": "01/02/2024",
+		"status": "To Do",
+		"notify": "Valentina Ortiz",
+		"priority": "high",
+		"notes": "Incorporar datos de nuevos pozos y sísmica 4D. Refinar modelo de facies.",
+		"responsable": "Roberto Vargas"
+	},
+	{
+		"id": 16,
+		"task": "Mantenimiento de Válvulas de Seguridad",
+		"dateStart": "15/11/2023",
+		"dateFinish": "15/01/2024",
+		"status": "To Do",
+		"notify": "Andrés Herrera",
+		"priority": "mid",
+		"notes": "Revisar y recalibrar PSVs en todas las instalaciones. Documentar cambios.",
+		"responsable": "Sofía Mendoza"
+	},
+	{
+		"id": 17,
+		"task": "Estudio de Factibilidad de Recuperación Mejorada",
+		"dateStart": "01/12/2023",
+		"dateFinish": "01/06/2024",
+		"status": "To Do",
+		"notify": "Camila Flores",
+		"priority": "high",
+		"notes": "Evaluar métodos EOR aplicables. Realizar simulaciones de reservorio y análisis económico.",
+		"responsable": "Diego Castro"
+	},
+	{
+		"id": 18,
+		"task": "Actualización de Plan de Contingencia",
+		"dateStart": "10/01/2024",
+		"dateFinish": "10/04/2024",
+		"status": "To Do",
+		"notify": "Gabriel Rivas",
+		"priority": "low",
+		"notes": null,
+		"responsable": "Valentina Ortiz"
+	},
+	{
+		"id": 19,
+		"task": "Evaluación de Impacto Ambiental",
+		"dateStart": "15/02/2024",
+		"dateFinish": "15/08/2024",
+		"status": "To Do",
+		"notify": "Lucía Paredes",
+		"priority": "high",
+		"notes": "Realizar estudio completo de impacto. Coordinar con autoridades locales y comunidades.",
+		"responsable": "Andrés Herrera"
+	},
+	{
+		"id": 20,
+		"task": "Optimización de Sistema de Levantamiento Artificial",
+		"dateStart": "01/03/2024",
+		"dateFinish": "01/09/2024",
+		"status": "To Do",
+		"notify": "Emilio Vega",
+		"priority": "mid",
+		"notes": "Evaluar eficiencia de bombas actuales. Proponer mejoras o reemplazos según sea necesario.",
+		"responsable": "Camila Flores"
+	}
+]

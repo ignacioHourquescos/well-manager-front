@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+   
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+/*VALUE FOR CUSTOM HOOK DEBUGMODE*/
+.debug-border * {
+  border: 1px solid red !important;
+}
+
+
+
+/*ANT TABLE STYLING*/
+/*ANT TABLE HEADER*/
+.ant-table-tbody{background-color: white !important;}
+.ant-table-thead > tr > th {
+  padding: 6px 2px 4px 4px !important;
+  background-color: #f0eff4 !important;
+  padding-left:0.5rem !important;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 8px 2px 4px 8px !important;
+}
+
+
+
+
+/*ANT TIPOGRAPHY / HEADER */
+.ant-typography {
+  margin: 0 !important;
+}
+
+
+
+
+/*ANT INPUT */
+.ant-input,
+.ant-picker,
+.ant-input-textarea textarea,
+.ant-select-selector {
+  border-radius: 0px !important;
+  display: block !important;
+}
+
+.main-search-well-input {
+      border: 1px solid rgb(10, 16, 24) !important;
+      border-radius: 6px !important;
+      /* Si quieres el borde en todos los lados: */
+      /* border: 2px solid red !important; */
+      /* O el borde completo: */
+      /* border: 1px solid red !important; */
+    }
+
+.ant-input:focus, .ant-input,
+.ant-picker:focus, .ant-picker,
+.ant-input-textarea textarea:focus, .ant-input-textarea textarea,
+.ant-select-selector:focus, .ant-select-selector,
+.ant-select-focused .ant-select-selector {
+  outline-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  background-color: transparent !important;
+}
+
+.ant-input:focus,
+.ant-picker:focus,
+.ant-input-textarea textarea:focus,
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus {
+  border-bottom: 1px solid #d9d9d9 !important;
+}
+
+/* Additional styles for better textarea appearance */
+.ant-input-textarea textarea {
+  resize: vertical;
+  min-height: 32px;
+}
+
+/* Additional styles for better select appearance */
+.ant-select-selector {
+  padding: 0 11px !important;
+}
+
+.ant-select-selection-search-input {
+  height: 30px !important;
+}
+
+/* Ensure the dropdown arrow remains visible */
+.ant-select-arrow {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+/*ANT MENU */
+.ant-menu-item-selected {
+  background-color: #001529 !important;
+  border-right: 8px solid #e7e247 !important;
+  border-radius: 0px !important;
+  margin:0px !important;
+  width: 100% !important;
+  color:#e7e247 !important;
+}
+
+.ant-menu-item {
+  margin:0px !important;
+  width: 100% !important;
+  background-color: #0A1018 !important;
+  
+}
+
+.ant-menu-item-selected a {
+  color: white !important;
+}
+
+
+
+/*ANT BUTTON */
+.ant-btn-color-primary{
+  color: #19519f !important;
+  font-weight: 400 !important;
+  box-shadow: none !important;
+  background-color: #19519f10 !important;
+  border-radius: 3px !important;
+}
+
+
+/*ANT LAYOUT */
+.ant-layout-content {
+	background-color: rgb(250, 250, 250) !important;
+}
+
+/*ANT TABLE */
+:where(.css-dev-only-do-not-override-ccdg5a).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-ccdg5a).ant-table-wrapper .ant-table-thead >tr>td{
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 0px !important;
+}
+
+.selected-row {
+  border: 3px solid red !important;
+}
+

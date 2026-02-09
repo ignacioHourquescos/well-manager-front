@@ -1,0 +1,556 @@
+{
+	"logout": "Cerrar sesión",
+	"welcome": "Bienvenido",
+	"common": {
+		"notApplicable": "No aplica"
+	},
+
+	"menu": {
+		"SCREENING_MODULE": "Pantalla general",
+		"PERSONAL_TASK_MODULE": "Mis Tareas",
+		"ANALYTICS_MODULE": "Analítica",
+		"ACCOUNT_MODULE": "Mi Cuenta",
+		"WELLS_MODULE": "Pozos"
+	},
+
+	"myAccount": {
+		"title": "Mi cuenta",
+		"firstName": "Nombre",
+		"lastName": "Apellido",
+		"email": "Correo electrónico",
+		"document": "Documento",
+		"phone": "Teléfono",
+		"address": "Dirección",
+		"role": "Rol",
+		"language": "Idioma de la app",
+		"roles": {
+			"manager": "Manager",
+			"supervisor": "Supervisor",
+			"operator": "Operador"
+		},
+		"languages": {
+			"es": "Español",
+			"en": "Inglés"
+		},
+		"languageUpdated": "Idioma actualizado correctamente",
+		"languageUpdateError": "Error al actualizar el idioma"
+	},
+
+	"home": {
+		"pageTitle": "Inicio",
+		"secondaryTitle": "Listado de Entidades",
+		"table": {
+			"type": "Tipo",
+			"well": "Pozo",
+			"performance": "Rendimiento",
+			"actionPlan": "Plan de Acción",
+			"project": "Proyecto",
+			"destinationPlant": "Planta de destino",
+			"date": "Fecha",
+			"tasks": "Tareas",
+			"viewTasks": "Ver"
+		},
+		"drawer": {
+			"title": "Tareas Pendientes",
+			"viewMore": "Ver más detalle →"
+		},
+		"status": {
+			"Block": "Bloqueado",
+			"InProgress": "En progreso",
+			"Done": "Completado"
+		},
+		"errors": {
+			"tasksFetch": "Error al obtener tareas",
+			"entitiesFetch": "Error al obtener entidades"
+		}
+	},
+
+	"wellTypes": {
+		"Oil Producer": "Productor de Petróleo",
+		"Water Producer": "Productor de Agua",
+		"Water Injector": "Inyector de Agua",
+		"Disposal": "Disposición",
+		"Gas Producer": "Productor de Gas",
+		"N/A": "No aplica"
+	},
+
+	"methodProduction": {
+		"Progressive cavity pump (PCP)": "Bomba de cavidad progresiva (PCP)",
+		"Recoil": "Rebote",
+		"Natural Flow": "Flujo natural",
+		"N/A": "No aplica",
+		"Swabbing": "Swabbing",
+		"Sucker rod pumping": "Bombeo con varilla de succión",
+		"Unknown": "Desconocido"
+	},
+
+	"reservoirType": {
+		"N/A": "No aplica",
+		"Conventional": "Convencional",
+		"Unknown": "Desconocido"
+	},
+
+	"drillingType": {
+		"N/A": "No aplica",
+		"Vertical": "Vertical",
+		"Unknown": "Desconocido"
+	},
+
+	"actionPlans": {
+		"ADJUST_POTENTIAL": {
+			"name": "Ajustar potencial",
+			"description": "Acciones orientadas a modificar los objetivos de producción del pozo según las condiciones actuales del reservorio y capacidades del pozo para optimizar las tasas de producción."
+		},
+		"IMPROVE_FLUID": {
+			"name": "Mejorar distribución de fluidos",
+			"description": "Optimización de los sistemas de distribución de fluidos para mejorar la eficiencia de producción y gestionar caudales entre múltiples pozos."
+		},
+		"SOLVE_FACILITIES": {
+			"name": "Resolver restricciones de instalaciones",
+			"description": "Abordaje y resolución de limitaciones de infraestructura que restringen la producción óptima, incluyendo mejoras o modificaciones de equipos."
+		},
+		"INACTIVE": {
+			"name": "Pozo inactivo / Cerrado",
+			"description": "Gestión de pozos suspendidos temporalmente o cerrados por mantenimiento, seguridad o razones económicas."
+		},
+		"ADJUST_SURFACE": {
+			"name": "Ajustar parámetros de superficie",
+			"description": "Ajuste de configuraciones del equipamiento superficial y condiciones operativas para optimizar el desempeño del pozo."
+		},
+		"UPDATE_PARAMETERS": {
+			"name": "Actualizar parámetros operativos",
+			"description": "Revisión y modificación de variables operativas clave para alinearlas con las condiciones actuales del pozo y los objetivos de producción."
+		},
+		"NORMAL_MONITORING": {
+			"name": "Monitoreo normal",
+			"description": "Supervisión regular y recolección de datos para mantener el control del rendimiento del pozo e identificar problemas potenciales tempranamente."
+		},
+		"RETURN_PRODUCTION": {
+			"name": "Retorno a producción/inyección",
+			"description": "Proceso de reactivación de pozos fuera de servicio luego de mantenimiento o períodos de cierre."
+		},
+		"IMPROVE_RECOVERY": {
+			"name": "Mejorar recuperación mejorada",
+			"description": "Implementación de técnicas avanzadas de recuperación para aumentar la producción en pozos existentes mediante métodos de recobro mejorado."
+		},
+		"REDUCE_CAPACITY": {
+			"name": "Reducir falta de capacidad",
+			"description": "Acciones para abordar y minimizar las restricciones de producción causadas por limitaciones de capacidad en instalaciones de superficie o sistemas aguas abajo."
+		},
+		"IMPROVE_RESERVOIR": {
+			"name": "Mejorar rendimiento del reservorio",
+			"description": "Estrategias para mejorar la productividad del reservorio mediante intervenciones de ingeniería y geología."
+		},
+		"ADJUST_FLOW": {
+			"name": "Ajustar desempeño de entrada/salida",
+			"description": "Optimización de condiciones de entrada y salida del pozo para maximizar la eficiencia de producción y el desempeño del mismo."
+		},
+		"possible_potential_adjustment": {
+			"name": "Posible ajuste de potencial"
+		},
+		"further_studies": {
+			"name": "Estudios adicionales"
+		},
+		"water_flooding_issues": {
+			"name": "Problemas de inyección de agua"
+		},
+		"no_performance": {
+			"name": "Sin rendimiento"
+		},
+		"operative_restrictions": {
+			"name": "Restricciones operativas"
+		},
+		"non_recoverable_production": {
+			"name": "Producción no recuperable"
+		},
+		"FURTHER_STUDIES": {
+			"name": "Estudios adicionales",
+			"description": "Análisis técnicos complementarios necesarios para definir el mejor curso de acción para la mejora del pozo."
+		},
+		"OUT_OF_SCAN": {
+			"name": "Fuera del escaneo",
+			"description": "Pozos que se encuentran fuera de los parámetros regulares de monitoreo o que requieren atención especial por circunstancias particulares."
+		},
+		"null": {
+			"name": "No asignado"
+		}
+	},
+
+	"performance": {
+		"UNRECOVRABLE": {
+			"name": "No recuperable",
+			"description": "Pozo con desempeño significativamente por debajo de lo esperado, con potencial económico limitado o nulo. Puede ser candidato para abandono o reutilización."
+		},
+		"OUTSTANDING": {
+			"name": "Sobresaliente",
+			"description": "Pozo con producción por encima de lo esperado, eficiencia operativa óptima y mínima necesidad de intervención. Representa un desempeño de producción de primer nivel."
+		},
+		"AVERAGE": {
+			"name": "Promedio",
+			"description": "Pozo que mantiene niveles de producción esperados dentro de parámetros operativos normales. Requiere mantenimiento y monitoreo estándar."
+		},
+		"RECOVERABLE": {
+			"name": "Recuperable",
+			"description": "Pozo con rendimiento reducido pero con potencial de recuperación de producción mediante intervenciones específicas y técnicas de optimización."
+		},
+		"ENHANCE": {
+			"name": "Mejorable",
+			"description": "Pozo que requiere intervenciones significativas para mejorar la producción. Candidato para técnicas como estimulación o optimización de levantamiento artificial."
+		},
+		"improve": {
+			"name": "≜ Mejorar"
+		},
+		"normal": {
+			"name": "⁓ Normal"
+		},
+		"poor": {
+			"name": "‼ Con problemas"
+		},
+		"null": {
+			"name": "No asignado"
+		}
+	},
+
+	"filters": {
+		"addFilter": "Agregar Filtro",
+		"generalFilters": "Filtros Generales",
+		"wellType": "Tipo de Pozo",
+		"destinationPlant": "Planta de destino",
+		"project": "Proyecto",
+		"searchWellCode": "Código de Pozo",
+		"actionPlan": "Plan de Acción",
+		"performance": "Rendimiento",
+		"removeFilter": "Eliminar filtro"
+	},
+
+	"tasks": {
+		"common": {
+			"confirm": "Confirmar",
+			"cancel": "Cancelar",
+			"save": "Guardar"
+		},
+		"tabs": {
+			"generalData": "Datos Generales",
+			"tasks": "Tareas",
+			"reservoirAnalysis": "Análisis complementario"
+		},
+		"messages": {
+			"updateSuccess": "Estado del pozo actualizado correctamente",
+			"updateError": "No se pudo actualizar el estado del pozo",
+			"createSuccess": "Tarea creada con éxito",
+			"createError": "Error al crear la tarea",
+			"loadError": "No se pudieron cargar las tareas"
+		},
+		"pageActions": {
+			"changePerformance": "Cambiar rendimiento",
+			"loadFailed": "Error al cargar opciones"
+		},
+		"wellDetail": {
+			"statistics": {
+				"type": "Tipo",
+				"destinationBatch": "Batería de destino",
+				"methodOfProduction": "Método de producción",
+				"drillingType": "Tipo de perforación",
+				"reservoirType": "Tipo de reservorio",
+				"depth": "Profundidad (m)",
+				"destinationPlant": "Planta de destino",
+				"destinationSite": "Sitio de destino",
+				"wfProject": "Proyecto WF",
+				"wellType": "Tipo de pozo"
+			},
+			"tasks": {
+				"open": "TAREAS ABIERTAS",
+				"closed": "TAREAS CERRADAS"
+			}
+		},
+		"addTask": "+ Agregar tarea",
+		"statuses": {
+			"pending": "Pendiente",
+			"failed": "Fallida",
+			"in_progress": "En proceso",
+			"to_do": "A realizar",
+			"stand_by": "Pausada",
+			"canceled": "Cancelada",
+			"done": "Terminada"
+		},
+		"addTaskModal": {
+			"title": "Agregar Nueva Tarea",
+			"cancel": "Cancelar",
+			"add": "Agregar Tarea",
+			"task": "Tarea",
+			"selectTask": "Por favor selecciona una tarea",
+			"responsible": "Responsable",
+			"selectResponsible": "Por favor selecciona el responsable",
+			"priority": "Prioridad",
+			"selectPriority": "Por favor selecciona la prioridad",
+			"startDate": "Fecha de inicio",
+			"selectStartDate": "Por favor selecciona la fecha de inicio",
+			"dueDate": "Fecha límite",
+			"selectDueDate": "Por favor selecciona la fecha límite",
+			"comments": "Comentarios adicionales",
+			"maxCharacters": "Máximo 500 caracteres",
+			"priorityOptions": {
+				"ALTA": "Alta",
+				"MEDIA": "Media",
+				"BAJA": "Baja"
+			}
+		},
+		"taskDetails": {
+			"taskRequired": "La tarea es obligatoria",
+			"updatingTask": "Actualizando tarea...",
+			"updatedTask": "Tarea actualizada correctamente",
+			"updateFailed": "Error al actualizar tarea",
+			"selectTask": "Selecciona una tarea para ver detalles",
+			"notifyTo": "Notificar a",
+			"status": "Estado",
+			"comments": "Comentarios",
+			"subTasks": "SubTareas",
+			"documents": "Documentos",
+			"addComment": "+ Agregar comentario",
+			"inputComment": "Ingrese comentario",
+			"sendComment": "Enviar comentario",
+			"addSubTask": "+ Agregar subTarea",
+			"inputSubTask": "Ingrese subTarea",
+			"sendSubTask": "Crear subTarea",
+			"addDocument": "+ Agregar Documento",
+			"document": "Documento",
+			"save": "Guardar",
+			"selectFile": "Seleccionar Archivo",
+			"fileSelected": "Archivo seleccionado",
+			"documentUploaded": "Documento subido correctamente",
+			"documentDeleted": "Documento eliminado correctamente",
+			"confirmDeleteTitle": "¿Eliminar documento?",
+			"confirmDeleteText": "¿Deseás eliminar este documento permanentemente?"
+		},
+		"reservoir": {
+			"title": "Análisis complementario",
+			"submitError": "Error al guardar el análisis",
+			"addAnalysis": "Agregar Análisis",
+			"analysisType": "Tipo de análisis",
+			"analysisTypes": {
+				"action_plan_proposal": "Propuesta de plan de acción futuro",
+				"evaluation_doc": "Informes especiales",
+				"comment": "Comentario de pozo",
+				"default": "Analisis"
+			},
+			"form": {
+				"specialReports": {
+					"date": "Fecha",
+					"description": "Descripción",
+					"type": "Tipo de informe",
+					"typeRequired": "Por favor seleccione un tipo de informe",
+					"dateRequired": "Por favor seleccione una fecha",
+					"descriptionRequired": "Por favor ingrese una descripción",
+					"fileRequired": "Por favor seleccione un archivo",
+					"types": {
+						"fluidAnalysis": "Informe de análisis de fluido",
+						"materialAnalysis": "Informe de análisis de material",
+						"solidSamplesAnalysis": "Informe de análisis de muestras sólidas",
+						"otherReports": "Otros informes (agregar detalle)"
+					}
+				},
+				"specialReportsHelp": {
+					"title": "Tipos de informes especiales:",
+					"fluidAnalysis": "• Informe de análisis de fluido",
+					"materialAnalysis": "• Informe de análisis de material",
+					"solidSamplesAnalysis": "• Informe de análisis de muestras sólidas",
+					"otherReports": "• Otros informes (agregar detalle)",
+					"note": "Nota: Los informes especiales son los adjuntos. Agregue fecha y descripción para resumir el contenido del informe (ejemplo: fotos pesca rotura de varilla 1\" nro 57)"
+				},
+				"selectTask": "Seleccionar tarea",
+				"selectActionPlan": "Seleccionar plan de acción",
+				"observations": "Observaciones",
+				"comment": "Ingrese comentario de pozo",
+				"uploadFile": "Seleccionar informe especial",
+				"linkedTo": "Vinculado a",
+				"estimatedYear": "Año estimado",
+				"reportType": "Tipo de informe",
+				"date": "Fecha",
+				"description": "Descripción"
+			},
+			"details": {
+				"selectToView": "Seleccione un análisis para ver los detalles",
+				"actionPlanProposal": "Propuesta de plan de acción futuro",
+				"evaluationDoc": "Informes especiales",
+				"comment": "Comentario de pozo",
+				"attachedDoc": "Documento adjunto",
+				"date": "Fecha",
+				"createdBy": "Creado por"
+			},
+			"confirmDeleteTitle": "¿Eliminar documento?",
+			"confirmDeleteText": "Esta acción eliminará el documento del sistema. ¿Deseás continuar?",
+			"documentDeleted": "Documento eliminado",
+			"errorDeleting": "Error al eliminar",
+			"loadError": "Error al cargar los análisis",
+			"commentAdded": "Comentario agregado exitosamente",
+			"commentError": "Error al agregar comentario",
+			"commentEmpty": "El comentario no puede estar vacío",
+			"commentUpdated": "Comentario actualizado exitosamente",
+			"errorUpdatingComment": "Error al actualizar comentario",
+			"commentDeleted": "Comentario eliminado exitosamente",
+			"errorDeletingComment": "Error al eliminar comentario",
+			"confirmDeleteCommentText": "Esta acción eliminará el comentario permanentemente. ¿Deseás continuar?",
+			"futureActionPlanAdded": "Plan de acción futuro agregado exitosamente",
+			"futureActionPlanError": "Error al agregar plan de acción futuro",
+			"futureActionPlanUpdated": "Plan de acción futuro actualizado exitosamente",
+			"errorUpdatingFutureActionPlan": "Error al actualizar plan de acción futuro",
+			"futureActionPlanDeleted": "Plan de acción futuro eliminado exitosamente",
+			"errorDeletingFutureActionPlan": "Error al eliminar plan de acción futuro",
+			"confirmDeleteFutureActionPlanText": "Esta acción eliminará el plan de acción futuro permanentemente. ¿Deseás continuar?",
+			"yearRequired": "El año es requerido"
+		}
+	},
+
+	"definedTasks": {
+		"1": "Calcular IPR",
+		"2": "Actualizar potencial/objetivo del pozo",
+		"3": "Definir condiciones extractivas",
+		"4": "Analizar muestra de fluido",
+		"5": "Realizar prueba de pozo",
+		"6": "Calibrar equipo de superficie",
+		"7": "Auditar sistema de medición",
+		"8": "Revisar red de asignación",
+		"9": "Modificar/Actualizar red de asignación",
+		"10": "Verificar presión en cabeza de pozo/línea",
+		"11": "Definir condición de inyección",
+		"12": "Definir programa de intervención de pozo",
+		"13": "Correr economía",
+		"14": "Programar intervención del pozo",
+		"15": "Solicitud de AFE",
+		"16": "Definir costo de intervención",
+		"17": "Conectar pozo",
+		"18": "Estimación de reservas",
+		"19": "Estimación de costos y riesgos",
+		"20": "Ejecutar registro de flujo",
+		"21": "Calibración/Limpieza de Ensamblaje",
+		"22": "Reemplazar/Limpiar filtros",
+		"23": "Realizar limpieza ácida - Combinada",
+		"24": "Realizar limpieza ácida - Selectiva",
+		"25": "Limpieza del pozo",
+		"26": "Ajustar desempeño de salida - Superficie",
+		"27": "Ajustar desempeño de salida - Fondo",
+		"28": "Colocar Tapón Regulador en Fondo de Pozo",
+		"29": "Abrir nueva zona",
+		"30": "Aislar o sellar zona existente",
+		"31": "Mejorar calidad del agua",
+		"32": "Mejorar manejo del agua",
+		"33": "Estudio del yacimiento",
+		"34": "Revisión de historial de inyección",
+		"35": "Analizar muestra sólida",
+		"36": "Analizar condición del material",
+		"37": "Realizar estudios ambientales",
+		"38": "Cerrar temporalmente",
+		"39": "Aumentar capacidad de inyección de agua",
+		"40": "Aumentar capacidad de bombeo",
+		"41": "Regular tasas de producción",
+		"42": "Regular tasas de inyección",
+		"43": "Realizar trabajo de acidificación",
+		"44": "Realizar fractura hidráulica",
+		"45": "Incluir/Excluir patrón de recobro por agua",
+		"46": "Incluir/Excluir inyección de gas",
+		"47": "Inyección química",
+		"48": "Perforación de alcance extendido/pozo multilateral",
+		"49": "Reperforar",
+		"50": "Deshidratación",
+		"51": "Reducir tamaño de bomba de fondo",
+		"52": "Cambiar sistema de levantamiento artificial",
+		"53": "Rediseñar BHA/Bomba",
+		"54": "Aumentar tamaño de bomba de fondo",
+		"55": "Diseñar nuevo ensamblaje de inyección selectiva",
+		"56": "Prueba de Presión del Yacimiento",
+		"57": "Ajuste histórico",
+		"58": "Simular pozo",
+		"59": "Revisar rendimiento del pozo",
+		"60": "Revisar plan de acción",
+		"61": "Revisar disposición de instalaciones",
+		"62": "Realizar MOC",
+		"63": "Definir alcance del proyecto",
+		"64": "Ejecutar proyecto",
+		"65": "Mejorar/Reparar instalación de inyección",
+		"66": "Limpieza de ducto",
+		"67": "Reemplazo de ducto",
+		"68": "Actualizar capacidad",
+		"69": "Analizar riesgos y peligros",
+		"70": "Definir programa de intervención",
+		"71": "Realizar operación de cierre",
+		"72": "Evaluar viabilidad económica/técnica",
+		"73": "Cambiar estado del pozo",
+		"74": "Presentar informe de cierre",
+		"75": "Reducir frecuencia/velocidad de operación",
+		"76": "Aumentar frecuencia/velocidad de operación",
+		"77": "Modificar presión de superficie",
+		"78": "Modificar estrangulador de superficie",
+		"79": "Revisar tratamiento químico",
+		"80": "Modificar plan de tratamiento químico",
+		"81": "Reemplazar equipo de superficie",
+		"82": "Aumentar capacidad extractiva del equipo de superficie",
+		"83": "Reducir capacidad extractiva del equipo de superficie",
+		"84": "Configurar mantenimiento correctivo",
+		"85": "Configurar mantenimiento preventivo",
+		"86": "Modificar puntos de ajuste",
+		"87": "Ajustar configuración de alarmas",
+		"88": "Verificar/Calibrar Sensores",
+		"89": "Reemplazar sensores",
+		"90": "Modificar configuración de SCADA",
+		"91": "Mejorar/corregir comunicaciones",
+		"92": "Validar IPR"
+	},
+
+	"personalTasks": {
+		"pageName": "Mis Tareas",
+		"secondaryTitle": "Lista de tareas personales",
+		"drawerTitle": "Detalles de la tarea",
+		"columns": {
+			"wellType": "Tipo de Pozo",
+			"performance": "Rendimiento",
+			"actionPlan": "Plan de Acción",
+			"well": "Pozo",
+			"task": "Tarea",
+			"priority": "Prioridad",
+			"status": "Estado",
+			"project": "Proyecto",
+			"destinationPlant": "Planta Destino",
+			"startDate": "Fecha de Inicio",
+			"dueDate": "Fecha de Vencimiento"
+		},
+		"statuses": {
+			"pending": "Pendiente",
+			"in_progress": "En progreso",
+			"done": "Completada",
+			"canceled": "Cancelada",
+			"failed": "Fallida",
+			"stand_by": "En espera",
+			"to_do": "A realizar"
+		},
+		"wellTypes": {
+			"Oil Producer": "Productor de Petróleo",
+			"Water Producer": "Productor de Agua",
+			"Water Injector": "Inyector de Agua",
+			"Disposal": "Pozo de Desecho"
+		}
+	},
+
+	"analytics": {
+		"title": "Analiticas",
+		"subtitle": "Graficos con Power Bi"
+	},
+
+	"wellsPage": {
+		"pageName": "Gestion Pozos",
+		"secondaryTitle": "Administracion de datos de Pozos",
+		"drawerTitle": "Detalles del pozo",
+		"columns": {
+			"wellType": "Tipo de Pozo",
+			"performance": "Rendimiento",
+			"actionPlan": "Plan de Acción",
+			"well": "Pozo",
+			"task": "Tarea",
+			"priority": "Prioridad",
+			"status": "Estado",
+			"project": "Proyecto",
+			"destinationPlant": "Planta Destino",
+			"startDate": "Fecha de Inicio",
+			"dueDate": "Fecha de Vencimiento"
+		}
+	}
+}

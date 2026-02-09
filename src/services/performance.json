@@ -1,0 +1,14 @@
+[
+	{
+		"code": "improve",
+		"label": "≜ Improve"
+	},
+	{
+		"code": "normal",
+		"label": "⁓ Normal"
+	},
+	{
+		"code": "poor",
+		"label": "‼ Issue"
+	}
+]

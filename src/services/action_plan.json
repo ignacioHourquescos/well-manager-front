@@ -1,0 +1,58 @@
+[
+	{
+		"code": "ADJUST_POTENTIAL",
+		"label": "Adjust potential"
+	},
+	{
+		"code": "IMPROVE_FLUID",
+		"label": "Improve Fluid Allocation"
+	},
+	{
+		"code": "SOLVE_FACILITIES",
+		"label": "Solve Facilities Constrains"
+	},
+	{
+		"code": "INACTIVE",
+		"label": "Inactive Well/Shut in"
+	},
+	{
+		"code": "ADJUST_SURFACE",
+		"label": "Adjust surface operational parameters"
+	},
+	{
+		"code": "UPDATE_PARAMETERS",
+		"label": "Update operational parameters"
+	},
+	{
+		"code": "NORMAL_MONITORING",
+		"label": "Normal Monitoring"
+	},
+	{
+		"code": "RETURN_PRODUCTION",
+		"label": "Return to production/Injection"
+	},
+	{
+		"code": "IMPROVE_RECOVERY",
+		"label": "Improve Enhanced Recovery"
+	},
+	{
+		"code": "REDUCE_CAPACITY",
+		"label": "Reduce lack of capacity"
+	},
+	{
+		"code": "IMPROVE_RESERVOIR",
+		"label": "Improve reservoir performance"
+	},
+	{
+		"code": "ADJUST_FLOW",
+		"label": "Adjust Inflow/Outflow performance"
+	},
+	{
+		"code": "FURTHER_STUDIES",
+		"label": "Further Studies"
+	},
+	{
+		"code": "OUT_OF_SCAN",
+		"label": "Out of Scan"
+	}
+]
