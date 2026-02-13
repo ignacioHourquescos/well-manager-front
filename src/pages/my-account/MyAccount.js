@@ -1,16 +1,6 @@
 import React from "react";
-import {
-	Typography,
-	Layout,
-	Form,
-	Input,
-	Row,
-	Col,
-	message,
-	Select,
-} from "antd";
+import { Typography, Form, Input, Row, Col, message, Select } from "antd";
 import LayoutPage from "../../components/layout/pages/LayoutPage";
-import { useParams } from "react-router-dom";
 import { Styled } from "./MyAccount.styles";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../context/AuthContext";
@@ -21,11 +11,9 @@ import enFlag from "../../assets/images/en.png";
 import { Typo } from "../../theme";
 
 const { Title } = Typography;
-const { Content } = Layout;
 
 //comentario test para probar el pull request
 function MyAccount() {
-	const { pozoCode } = useParams();
 	const { t, i18n } = useTranslation();
 	const { dbUser } = useAuth();
 	const user = JSON.parse(localStorage.getItem("user")) || {};

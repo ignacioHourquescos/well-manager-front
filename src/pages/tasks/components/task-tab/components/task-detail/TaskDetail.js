@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import {
 	Form,
 	Input,
@@ -16,7 +16,6 @@ import dayjs from "dayjs";
 import {
 	update_task,
 	fetch_task_statuses,
-	get_all_users,
 	get_users_by_clientId,
 } from "../../../../../../services/general";
 import CommentsAndSubTasks from "./components/CommentsAndSubTasks";
@@ -91,6 +90,7 @@ function TaskDetail({ initialValues, taskDetails, loading, onSuccess }) {
 		};
 
 		getStatusOptions();
+		// eslint-disable-next-line
 	}, []);
 
 	// Add useEffect to fetch users
@@ -123,17 +123,8 @@ function TaskDetail({ initialValues, taskDetails, loading, onSuccess }) {
 		};
 
 		fetchUsers();
+		// eslint-disable-next-line
 	}, []);
-
-	//CALCULA LA CANIDAD DE FILAS PARA NOTAS
-	const calculateRows = useMemo(() => {
-		if (!formValues?.notes) return 1;
-		const lineBreaks = (formValues.notes.match(/\n/g) || []).length;
-		const estimatedRows = Math.ceil(
-			(formValues.notes.length + lineBreaks) / 50,
-		);
-		return Math.min(Math.max(estimatedRows, 1), 4); // Minimum 1 row, maximum 4 rows
-	}, [formValues?.notes]);
 
 	const handleSubmit = async (values) => {
 		try {
@@ -175,10 +166,6 @@ function TaskDetail({ initialValues, taskDetails, loading, onSuccess }) {
 		} finally {
 			setIsUpdating(false);
 		}
-	};
-
-	const handleValuesChange = () => {
-		form.submit();
 	};
 
 	if (loading) {

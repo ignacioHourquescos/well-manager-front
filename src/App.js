@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { useDebugMode } from "./hooks/useDebugMode";
-import SplashScreen from "./components/splash-screen/SplashScreen";
 import { FilterProvider } from "./context/FilterContext";
 import { useAuth } from "./context/AuthContext";
 import axiosInstance from "./services/axiosInstance";
@@ -15,7 +14,6 @@ import { Spin } from "antd";
 import i18n from "./configuration/i18n";
 
 function AnimatedRoutes() {
-	const location = useLocation();
 	const { userData, dbUser, ready } = useAuth();
 
 	useEffect(() => {
@@ -42,7 +40,7 @@ function AnimatedRoutes() {
 		(error) => {
 			console.log("axios interceptor error");
 			return Promise.reject(error);
-		}
+		},
 	);
 
 	return (

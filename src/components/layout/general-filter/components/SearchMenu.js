@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Form, Row, Col, Input, Select, Button, Checkbox } from "antd";
+import { Form, Row, Col, Input, Select, Button } from "antd";
 import { Styled } from "./SearchMenu.styles";
 import FormItem from "../../../../components/common/FormItem";
 import {
 	fetch_performance,
 	fetch_action_plan,
 } from "../../../../services/general";
-import { FaSearch } from "react-icons/fa";
 import { useFilters } from "../../../../context/FilterContext";
 import { SearchOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 
-const { Option } = Select;
 const SearchMenu = ({ onFilter }) => {
 	const [form] = Form.useForm();
 	const [performanceOptions, setPerformanceOptions] = useState([]);
@@ -48,6 +46,7 @@ const SearchMenu = ({ onFilter }) => {
 		};
 
 		fetchData();
+		// eslint-disable-next-line
 	}, []);
 
 	// Sincronizar el formulario con el FilterContext cuando cambian los filtros

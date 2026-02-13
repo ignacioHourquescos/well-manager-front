@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Layout, Menu } from "antd";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Styled } from "./LayoutGeneral.styles";
@@ -7,8 +7,6 @@ import {
 	MdOutlineDataThresholding,
 	MdOutlineFullscreen,
 	MdOutlineAccountBox,
-	MdOutlineEdit,
-	MdOutlineEditAttributes,
 	MdOutlineEditNote,
 } from "react-icons/md";
 import { BiTask } from "react-icons/bi";
@@ -64,7 +62,7 @@ function LayoutGeneral({ children }) {
 		navigate(e.key);
 	};
 
-	const shouldShowFilter = !location.pathname.includes("/tasks/");
+	// const shouldShowFilter = !location.pathname.includes("/tasks/");
 
 	return (
 		<Layout

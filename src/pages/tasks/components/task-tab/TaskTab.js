@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, message, Button, Table, Statistic } from "antd";
+import { Row, Col, message } from "antd";
 import TasksTable from "./components/table/TaskTable";
 import TaskDetail from "./components/task-detail/TaskDetail";
 import {
@@ -17,11 +17,13 @@ function TaskTab({
 	const [selectedTask, setSelectedTask] = useState(null);
 	const [taskDetails, setTaskDetails] = useState(null);
 	const [loading, setLoading] = useState(false);
+	// eslint-disable-next-line
 	const [isTableUpdating, setIsTableUpdating] = useState(false);
 	const [statusMapping, setStatusMapping] = useState({});
+	// eslint-disable-next-line
 	const [statusCounts, setStatusCounts] = useState({ OPEN: 0, CLOSED: 0 });
 	const [isMobile, setIsMobile] = useState(() =>
-		typeof window !== "undefined" ? window.innerWidth < 768 : false
+		typeof window !== "undefined" ? window.innerWidth < 768 : false,
 	);
 
 	useEffect(() => {

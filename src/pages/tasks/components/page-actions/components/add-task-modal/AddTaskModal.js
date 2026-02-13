@@ -10,7 +10,7 @@ import {
 	Row,
 	Col,
 } from "antd";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import FormItem from "../../../../../../components/common/FormItem";
 import {
 	fetch_task_descriptions_by_action_plan,
@@ -71,6 +71,7 @@ const AddTaskModal = ({ open, onClose, onSubmit }) => {
 			actionPlanId && fetchTaskDescriptions();
 			fetchUsers();
 		}
+		// eslint-disable-next-line
 	}, [open, actionPlanId]);
 
 	// Calculate rows for TextArea
@@ -241,28 +242,5 @@ const priority_options = [
 	{
 		value: "BAJA",
 		label: "Low",
-	},
-];
-
-const responsible_options = [
-	{
-		value: "Juan Perez",
-		label: "Juan Perez",
-	},
-	{
-		value: "Francisco Paz",
-		label: "Francisco Paz",
-	},
-	{
-		value: "Jorge Fernandez",
-		label: "Jorge Fernandez",
-	},
-	{
-		value: "Maria Gomez",
-		label: "Maria Gomez",
-	},
-	{
-		value: "Silvia Perez",
-		label: "Silvia Perez",
 	},
 ];

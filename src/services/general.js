@@ -1,7 +1,4 @@
-import axios from "axios";
 import axiosInstance from "./axiosInstance";
-
-const CONTROLLER = "/";
 
 export const fetch_wells = async (wellId, clientId) => {
 	try {

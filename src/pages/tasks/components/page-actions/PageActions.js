@@ -20,7 +20,7 @@ const PageActions = ({
 	const { t } = useTranslation();
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [isMobile, setIsMobile] = useState(() =>
-		typeof window !== "undefined" ? window.innerWidth < 768 : false
+		typeof window !== "undefined" ? window.innerWidth < 768 : false,
 	);
 
 	useEffect(() => {
@@ -29,7 +29,6 @@ const PageActions = ({
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
-	const handleOpenModal = () => setIsModalOpen(true);
 	const handleCloseModal = () => setIsModalOpen(false);
 
 	return (

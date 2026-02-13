@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 const fadeOut = keyframes`
@@ -20,10 +20,10 @@ const SplashContainer = styled.div`
 	cursor: pointer;
 `;
 
-const Logo = styled.img`
-	width: 150px;
-	height: auto;
-`;
+// const Logo = styled.img`
+// 	width: 150px;
+// 	height: auto;
+// `;
 
 const AppName = styled.div`
 	color: white;

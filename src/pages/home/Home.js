@@ -1,11 +1,6 @@
-import { Typography, Layout, Drawer, Table, List, Tag } from "antd";
+import { Table } from "antd";
 import React, { useMemo, useState, useEffect } from "react";
-import {
-	fetch_entities,
-	fetch_performance,
-	fetch_wells,
-} from "../../services/general";
-import tasks from "../../services/task.json";
+import { fetch_wells } from "../../services/general";
 import LayoutPage from "../../components/layout/pages/LayoutPage";
 import { Link } from "react-router-dom";
 import { useFilters } from "../../context/FilterContext";
@@ -21,8 +16,8 @@ function Home() {
 	const { dbUser } = useAuth();
 	const [entities, setEntities] = useState([]);
 	const [filteredEntities, setFilteredEntities] = useState([]);
-	const [loading, setLoading] = useState(true);
 	const [loadingWells, setLoadingWells] = useState(true);
+	// eslint-disable-next-line
 	const [error, setError] = useState(null);
 	// const [drawerVisible, setDrawerVisible] = useState(false);
 	// const [selectedEntityTasks, setSelectedEntityTasks] = useState([]);
@@ -66,6 +61,7 @@ function Home() {
 		const handleResize = () => setIsMobile(window.innerWidth < 768);
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
+		// eslint-disable-next-line
 	}, [dbUser]);
 
 	const columns = [
@@ -201,6 +197,7 @@ function Home() {
 
 	useEffect(() => {
 		applyAllFilters(entities);
+		// eslint-disable-next-line
 	}, [filters, entities]);
 
 	const mobileEntities = useMemo(() => {
@@ -256,19 +253,6 @@ function Home() {
 		}
 
 		setFilteredEntities(filtered);
-	};
-
-	const getStatusColor = (status) => {
-		switch (status) {
-			case "Block":
-				return "red";
-			case "InProgress":
-				return "blue";
-			case "Done":
-				return "green";
-			default:
-				return "default";
-		}
 	};
 
 	return (

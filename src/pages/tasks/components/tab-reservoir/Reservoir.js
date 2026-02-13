@@ -4,7 +4,6 @@ import {
 	Button,
 	Select,
 	Input,
-	Upload,
 	Typography,
 	Card,
 	Row,
@@ -13,13 +12,11 @@ import {
 	Form,
 } from "antd";
 import {
-	UploadOutlined,
 	FileTextOutlined,
-	CloseOutlined,
 	EditOutlined,
 	DeleteOutlined,
 } from "@ant-design/icons";
-import { Container, LeftColumn, RightColumn, Title } from "./Reservoir.styles";
+import { Container, LeftColumn, RightColumn } from "./Reservoir.styles";
 import RenderFormContent from "./components/RenderFormContent";
 import { useTranslation } from "react-i18next";
 import {
@@ -101,14 +98,14 @@ const Reservoir = ({ currentWellData }) => {
 				// Fetch comments
 				const commentsResponse =
 					await fetch_well_complementary_analysis_comments(
-						currentWellData.id_well
+						currentWellData.id_well,
 					);
 				const comments = commentsResponse.data || [];
 
 				// Fetch future action plans
 				const futureActionPlansResponse =
 					await fetch_well_complementary_analysis_future_action_plans(
-						currentWellData.id_well
+						currentWellData.id_well,
 					);
 				const futureActionPlans = futureActionPlansResponse.data || [];
 
@@ -229,13 +226,13 @@ const Reservoir = ({ currentWellData }) => {
 
 					// Get user data from localStorage
 					const userDataAP = JSON.parse(
-						localStorage.getItem("user-data") || "{}"
+						localStorage.getItem("user-data") || "{}",
 					);
 					const userIdAP = userDataAP.id;
 
 					// Find the action plan ID from the code
 					const selectedPlan = actionPlans.find(
-						(plan) => plan.code === selectedActionPlan
+						(plan) => plan.code === selectedActionPlan,
 					);
 					const actionPlanId = selectedPlan ? parseInt(selectedPlan.id) : null;
 
@@ -246,7 +243,7 @@ const Reservoir = ({ currentWellData }) => {
 								actionPlanId,
 								linkedTo,
 								estimatedYear.year(),
-								userIdAP
+								userIdAP,
 							);
 
 						if (response.success) {
@@ -297,7 +294,7 @@ const Reservoir = ({ currentWellData }) => {
 
 					// Get user data from localStorage
 					const userData = JSON.parse(
-						localStorage.getItem("user-data") || "{}"
+						localStorage.getItem("user-data") || "{}",
 					);
 					const userId = userData.id;
 
@@ -305,7 +302,7 @@ const Reservoir = ({ currentWellData }) => {
 						const response = await create_well_complementary_analysis_comment(
 							currentWellData.id_well,
 							comment,
-							userId
+							userId,
 						);
 
 						if (response.success) {
@@ -446,7 +443,7 @@ const Reservoir = ({ currentWellData }) => {
 		} else if (analysis.type === "action_plan_proposal") {
 			// Find the action plan object from the code
 			const plan = actionPlans.find(
-				(p) => p.code === analysis.data.actionPlanCode
+				(p) => p.code === analysis.data.actionPlanCode,
 			);
 			setEditingFutureActionPlan({
 				actionPlanId: plan ? plan.id : null,
@@ -468,7 +465,7 @@ const Reservoir = ({ currentWellData }) => {
 				try {
 					await delete_document(documentId);
 					setAnalyses((prev) =>
-						prev.filter((a) => a.data.documentId !== documentId)
+						prev.filter((a) => a.data.documentId !== documentId),
 					);
 					message.success(t("tasks.reservoir.documentDeleted"));
 				} catch (err) {
@@ -488,9 +485,8 @@ const Reservoir = ({ currentWellData }) => {
 			okButtonProps: { danger: true },
 			onOk: async () => {
 				try {
-					const response = await delete_well_complementary_analysis_comment(
-						entryId
-					);
+					const response =
+						await delete_well_complementary_analysis_comment(entryId);
 					if (response.success) {
 						setAnalyses((prev) => prev.filter((a) => a.entry_id !== entryId));
 						setSelectedAnalysis(null);
@@ -513,7 +509,7 @@ const Reservoir = ({ currentWellData }) => {
 		try {
 			const response = await update_well_complementary_analysis_comment(
 				selectedAnalysis.entry_id,
-				editingCommentText
+				editingCommentText,
 			);
 
 			if (response.success) {
@@ -522,8 +518,8 @@ const Reservoir = ({ currentWellData }) => {
 					prev.map((a) =>
 						a.entry_id === selectedAnalysis.entry_id
 							? { ...a, data: { ...a.data, comment: editingCommentText } }
-							: a
-					)
+							: a,
+					),
 				);
 
 				// Update selected analysis
@@ -552,7 +548,7 @@ const Reservoir = ({ currentWellData }) => {
 				try {
 					const response =
 						await delete_well_complementary_analysis_future_action_plan(
-							entryId
+							entryId,
 						);
 					if (response.success) {
 						setAnalyses((prev) => prev.filter((a) => a.entry_id !== entryId));
@@ -581,7 +577,7 @@ const Reservoir = ({ currentWellData }) => {
 					selectedAnalysis.entry_id,
 					actionPlanId,
 					description,
-					year
+					year,
 				);
 
 			if (response.success) {
@@ -601,9 +597,9 @@ const Reservoir = ({ currentWellData }) => {
 										linkedTo: description,
 										estimatedYear: year,
 									},
-							  }
-							: a
-					)
+								}
+							: a,
+					),
 				);
 
 				// Update selected analysis
@@ -722,7 +718,7 @@ const Reservoir = ({ currentWellData }) => {
 										onClick={() => {
 											setIsEditingFutureActionPlan(false);
 											const plan = actionPlans.find(
-												(p) => p.code === selectedAnalysis.data.actionPlanCode
+												(p) => p.code === selectedAnalysis.data.actionPlanCode,
 											);
 											setEditingFutureActionPlan({
 												actionPlanId: plan ? plan.id : null,
@@ -740,7 +736,7 @@ const Reservoir = ({ currentWellData }) => {
 								<p>
 									{selectedAnalysis.data.actionPlanName ||
 										t(
-											`actionPlans.${selectedAnalysis.data.actionPlanCode}.name`
+											`actionPlans.${selectedAnalysis.data.actionPlanCode}.name`,
 										)}
 								</p>
 								<h3>{t("tasks.reservoir.form.linkedTo")}</h3>
@@ -796,7 +792,7 @@ const Reservoir = ({ currentWellData }) => {
 								<h4>{t("tasks.reservoir.form.date")}</h4>
 								<p>
 									{new Date(
-										selectedAnalysis.data.reportDate
+										selectedAnalysis.data.reportDate,
 									).toLocaleDateString("es-ES")}
 								</p>
 							</>

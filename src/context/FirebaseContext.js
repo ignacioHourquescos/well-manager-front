@@ -7,6 +7,7 @@ export function useFirebase() {
 }
 
 export function FirebaseProvider({ children }) {
+	// eslint-disable-next-line
 	const [actualMonth, setActualMonth] = useState();
 
 	useEffect(() => {

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Table, Tag, Drawer } from "antd";
 import LayoutPage from "../../components/layout/pages/LayoutPage";
-import { fetch_personal_tasks, get_all_users } from "../../services/general";
+import { fetch_personal_tasks } from "../../services/general";
 import dayjs from "dayjs";
 import TaskDetail from "../tasks/components/task-tab/components/task-detail/TaskDetail";
 import { useFilters } from "../../context/FilterContext";
-import { GiOilDrum } from "react-icons/gi";
-import { FaHouseFloodWater } from "react-icons/fa6";
-import { BsTrash3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../context/AuthContext";

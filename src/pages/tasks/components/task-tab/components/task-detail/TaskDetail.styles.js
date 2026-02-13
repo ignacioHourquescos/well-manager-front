@@ -1,5 +1,3 @@
-import { Button } from "antd";
-import { VariantContext } from "antd/es/form/context";
 import styled from "styled-components";
 
 export const Styled = {

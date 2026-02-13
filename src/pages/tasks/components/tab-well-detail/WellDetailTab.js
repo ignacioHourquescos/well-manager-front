@@ -12,12 +12,11 @@ const { Title } = Typography;
 
 const WellDetailTab = ({ currentWellData, taskData }) => {
 	const [workOrders, setWorkOrders] = useState([]);
-	const [isTableUpdating, setIsTableUpdating] = useState(false);
 	const [statusMapping, setStatusMapping] = useState({});
 	const [statusCounts, setStatusCounts] = useState({ OPEN: 0, CLOSED: 0 });
 	const { t } = useTranslation();
 	const [isMobile, setIsMobile] = useState(() =>
-		typeof window !== "undefined" ? window.innerWidth < 768 : false
+		typeof window !== "undefined" ? window.innerWidth < 768 : false,
 	);
 
 	useEffect(() => {
@@ -41,7 +40,7 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 			try {
 				if (currentWellData?.id_well) {
 					const response = await fetch_wells_work_orders(
-						currentWellData?.id_well
+						currentWellData?.id_well,
 					);
 					setWorkOrders(response);
 				}
@@ -98,7 +97,7 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 									paddingBottom: "10px",
 									paddingTop: "0",
 									borderRadius: "0px",
-							  }
+								}
 							: {}
 					}
 				>
@@ -108,14 +107,14 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 							<Statistic
 								title=""
 								value={t(
-									`performance.${order.performance_code || "null"}.name`
+									`performance.${order.performance_code || "null"}.name`,
 								)}
 								valueRender={(value) => <Title level={5}>{value}</Title>}
 							/>
 							<Statistic
 								title=""
 								value={t(
-									`actionPlans.${order.action_plan_code || "null"}.name`
+									`actionPlans.${order.action_plan_code || "null"}.name`,
 								)}
 								valueRender={(value) => <Title level={5}>{value}</Title>}
 							/>
@@ -234,7 +233,7 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 							title={t("tasks.wellDetail.statistics.methodOfProduction")}
 							value={translateOrNA(
 								"methodProduction",
-								currentWellData?.method_production
+								currentWellData?.method_production,
 							)}
 							valueRender={(value) => <Title level={5}>{value}</Title>}
 						/>
@@ -245,7 +244,7 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 								title={t("tasks.wellDetail.statistics.drillingType")}
 								value={translateOrNA(
 									"drillingType",
-									currentWellData?.drilling_type
+									currentWellData?.drilling_type,
 								)}
 								valueRender={(value) => <Title level={5}>{value}</Title>}
 							/>
@@ -256,7 +255,7 @@ const WellDetailTab = ({ currentWellData, taskData }) => {
 							title={t("tasks.wellDetail.statistics.reservoirType")}
 							value={translateOrNA(
 								"reservoirType",
-								currentWellData?.reservoir_type
+								currentWellData?.reservoir_type,
 							)}
 							valueRender={(value) => <Title level={5}>{value}</Title>}
 						/>

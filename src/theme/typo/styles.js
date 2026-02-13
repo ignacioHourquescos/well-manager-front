@@ -135,6 +135,12 @@ export const Inner = styled.span`
 					font-size: ${SIZES.level6};
 					font-style: italic;
 				`;
+			default:
+				return css`
+					font-family: "Roboto", sans-serif;
+					font-weight: ${WEIGHT.SemiBold};
+					font-size: ${SIZES.level11};
+				`;
 		}
 	}}
   ${(props) => {
@@ -162,6 +168,10 @@ export const Inner = styled.span`
 			case "SemiBold":
 				return css`
 					font-weight: ${WEIGHT.SemiBold};
+				`;
+			default:
+				return css`
+					font-weight: ${WEIGHT.Bold};
 				`;
 		}
 	}}
@@ -283,6 +293,12 @@ export const Inner = styled.span`
 					}
 				`;
 			case "darkMuted":
+				return css`
+					&:hover {
+						color: ${COLORS.DarkGrey};
+					}
+				`;
+			default:
 				return css`
 					&:hover {
 						color: ${COLORS.DarkGrey};

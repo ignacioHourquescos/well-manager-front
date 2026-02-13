@@ -1,29 +1,13 @@
 import React from "react";
-import { Tabs } from "antd";
-import { StyledContainer, StyledTabs } from "./CommentsAndSubTasks.styles";
-import Comments from "./components/comments/Comments";
+import { StyledContainer } from "./CommentsAndSubTasks.styles";
 import SubTasks from "./components/sub-tasks/SubTasks";
 import CommentsCopy from "./components/comments/CommentsCopy";
 import Documents from "./components/documents/Documents";
 import { useTranslation } from "react-i18next";
 import Title from "antd/es/typography/Title";
 
-const { TabPane } = Tabs;
-
 const CommentsAndSubTasks = ({ taskDetails }) => {
 	const { t } = useTranslation();
-
-	const subtasks = JSON.parse(
-		localStorage.getItem(`subtasks_${taskDetails.id}`)
-	);
-
-	const comments = JSON.parse(
-		localStorage.getItem(`comments_${taskDetails.id}`)
-	);
-
-	const documents = JSON.parse(
-		localStorage.getItem(`documents_${taskDetails.id}`)
-	);
 
 	return (
 		<StyledContainer>

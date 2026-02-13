@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useAuth } from "../../../context/AuthContext";
 import {
 	openNotificationWithIcon,
 	TYPE,
 } from "../../../utils/notificationToast";
 import { Form, Input } from "antd";
-import { Typo } from "../../../theme";
 import {
 	AntdButton,
 	AppName,
@@ -15,7 +13,6 @@ import {
 	Container,
 	InnerForm,
 	Instruction,
-	NavLink,
 	Section,
 	SplashContainer,
 } from "./styles";
@@ -24,7 +21,6 @@ export default function ForgotPassword() {
 	const { resetPassword } = useAuth();
 	const [form] = Form.useForm();
 	const [submitting, setSubmitting] = useState(false);
-	const navigate = useNavigate();
 
 	const onFinish = async (values) => {
 		try {
@@ -36,7 +32,7 @@ export default function ForgotPassword() {
 			openNotificationWithIcon(
 				TYPE.ERROR,
 				"Error al reestablecer la contraseña",
-				"Por favor verifique el correo o contacte a soporte"
+				"Por favor verifique el correo o contacte a soporte",
 			);
 		} finally {
 			setSubmitting(false);

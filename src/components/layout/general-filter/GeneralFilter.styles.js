@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Layout, Tag } from "antd";
+import { Tag } from "antd";
 
 export const Styled = {
 	Header: styled.div`

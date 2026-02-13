@@ -1,4 +1,4 @@
-import { Row, Col, message, Tabs } from "antd";
+import { message, Tabs } from "antd";
 import React, { useState, useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import LayoutPage from "../../components/layout/pages/LayoutPage";
@@ -207,6 +207,7 @@ function Tasks() {
 		if (workOrderId) {
 			fetchTasks();
 		}
+		// eslint-disable-next-line
 	}, [workOrderId]);
 
 	useEffect(() => {

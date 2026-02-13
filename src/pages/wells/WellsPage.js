@@ -43,8 +43,6 @@ import LockableItem from "../../components/common/LockableItem";
 
 const { Title } = Typography;
 
-const DRILLING_TYPE_OPTIONS = [null, "Vertical", "N/A"];
-
 const METHOD_PRODUCTION_OPTIONS = [
 	null,
 	"N/A",
@@ -164,7 +162,6 @@ export default function WellsPage() {
 	const [substates, setSubstates] = useState([]);
 	const [tipoestadoOptions, setTipoestadoOptions] = useState([]);
 	const [statusLoading, setStatusLoading] = useState(false);
-	const [isHydrating, setIsHydrating] = useState(false);
 
 	const stateId = Form.useWatch("state_id", form);
 	const substateId = Form.useWatch("substate_id", form);

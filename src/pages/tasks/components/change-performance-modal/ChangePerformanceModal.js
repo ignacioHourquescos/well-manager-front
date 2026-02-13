@@ -67,6 +67,7 @@ const ChangePerformanceModal = ({
 		};
 
 		fetchInitialData();
+		// eslint-disable-next-line
 	}, []);
 
 	// Efecto para actualizar los action plans habilitados cuando cambia la performance
@@ -79,14 +80,14 @@ const ChangePerformanceModal = ({
 						prev.map((option) => ({
 							...option,
 							disabled: true,
-						}))
+						})),
 					);
 					return;
 				}
 
 				// Obtenemos los action plans permitidos para esta performance
 				const enabledActionPlans = await fetch_action_plans_by_performance(
-					formValues.performance
+					formValues.performance,
 				);
 				const enabledIds = enabledActionPlans.map((ap) => ap.id_action_plan);
 
@@ -95,7 +96,7 @@ const ChangePerformanceModal = ({
 					prev.map((option) => ({
 						...option,
 						disabled: !enabledIds.includes(option.value),
-					}))
+					})),
 				);
 
 				// Si el action plan seleccionado está deshabilitado, lo limpiamos
@@ -112,6 +113,7 @@ const ChangePerformanceModal = ({
 		};
 
 		updateEnabledActionPlans();
+		// eslint-disable-next-line
 	}, [formValues?.performance]);
 
 	const handleOk = async () => {

@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useAuth } from "../../../context/AuthContext";
 import {
 	openNotificationWithIcon,
 	TYPE,
 } from "../../../utils/notificationToast";
 import { Form, Input } from "antd";
-import { Typo } from "../../../theme";
 import {
 	AntdButton,
 	AppName,
@@ -24,7 +22,6 @@ export default function SignIn() {
 	const { login } = useAuth();
 	const [form] = Form.useForm();
 	const [submitting, setSubmitting] = useState(false);
-	const navigate = useNavigate();
 
 	const onFinish = async (values) => {
 		try {
@@ -36,7 +33,7 @@ export default function SignIn() {
 			openNotificationWithIcon(
 				TYPE.ERROR,
 				"No se permite el login del usuario",
-				"Por favor revise sus credenciales"
+				"Por favor revise sus credenciales",
 			);
 		} finally {
 			setSubmitting(false);

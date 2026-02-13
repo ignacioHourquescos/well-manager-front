@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Modal, Checkbox, Button, Tag, Title } from "antd";
+import { useState } from "react";
+import { Modal, Checkbox, Button } from "antd";
 import { Styled } from "./GeneralFilter.styles";
 import { useFilters } from "../../../context/FilterContext";
 import { GiOilDrum } from "react-icons/gi";
@@ -142,10 +142,6 @@ const GeneralFilter = () => {
 
 	const handleWellTypeChange = (checkedValues) => {
 		setSelectedWellTypes(checkedValues);
-	};
-
-	const handleBateriaChange = (checkedValues) => {
-		setSelectedBaterias(checkedValues);
 	};
 
 	const handleDestinationChange = (checkedValues) => {

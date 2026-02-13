@@ -10,11 +10,10 @@ import {
 	Row,
 	Col,
 } from "antd";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import FormItem from "../../../../../../../../components/common/FormItem";
 import {
 	fetch_task_descriptions_by_action_plan,
-	get_all_users,
 	get_users_by_clientId,
 } from "../../../../../../../../services/general";
 import { useTranslation } from "react-i18next";
@@ -74,6 +73,7 @@ const AddTaskModal = ({ open, onClose, onSubmit }) => {
 		if (open && actionPlanId) {
 			fetchTaskDescriptions();
 		}
+		// eslint-disable-next-line
 	}, [open, actionPlanId]);
 
 	// Add useEffect to fetch users for email notifications
@@ -108,6 +108,7 @@ const AddTaskModal = ({ open, onClose, onSubmit }) => {
 		if (open) {
 			fetchUsers();
 		}
+		// eslint-disable-next-line
 	}, [open]);
 
 	// Calculate rows for TextArea

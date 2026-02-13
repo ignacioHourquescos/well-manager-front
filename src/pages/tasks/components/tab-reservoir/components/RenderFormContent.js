@@ -32,11 +32,8 @@ const RenderFormContent = ({
 	} = actionPlanData;
 
 	const {
-		reportType,
 		setReportType,
-		reportDate,
 		setReportDate,
-		reportDescription,
 		setReportDescription,
 		selectedFile,
 		setSelectedFile,
@@ -87,7 +84,7 @@ const RenderFormContent = ({
 								{
 									required: true,
 									message: t(
-										"tasks.reservoir.form.specialReports.typeRequired"
+										"tasks.reservoir.form.specialReports.typeRequired",
 									),
 								},
 							]}
@@ -114,7 +111,7 @@ const RenderFormContent = ({
 								{
 									required: true,
 									message: t(
-										"tasks.reservoir.form.specialReports.dateRequired"
+										"tasks.reservoir.form.specialReports.dateRequired",
 									),
 								},
 							]}
@@ -133,7 +130,7 @@ const RenderFormContent = ({
 						<Form.Item name="reportDescription" style={{ marginBottom: 16 }}>
 							<TextArea
 								placeholder={t(
-									"tasks.reservoir.form.specialReports.description"
+									"tasks.reservoir.form.specialReports.description",
 								)}
 								onChange={(e) => {
 									setReportDescription(e.target.value);
@@ -148,7 +145,7 @@ const RenderFormContent = ({
 								{
 									required: true,
 									message: t(
-										"tasks.reservoir.form.specialReports.fileRequired"
+										"tasks.reservoir.form.specialReports.fileRequired",
 									),
 								},
 							]}
